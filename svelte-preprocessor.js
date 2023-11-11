@@ -1,5 +1,20 @@
 import path from 'node:path';
 
+// Usage:
+/* svelte.config.js
+const config = {
+  preprocess: classPreprocessor([
+    ["row", "flex flex-row"], // custom shorthand for tailwind
+    ["col", "flex flex-col"],
+    ["jsi", "justify-items-start"]
+  ]),
+  kit: {
+    adapter: adapter(),
+  },
+};
+export default config;
+*/
+
 function classPreprocessor(classArray = []) {
   const classMap = new Map(classArray);
   const srcFSlash = path.resolve('./src').replaceAll('\\', '/');
