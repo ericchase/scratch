@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+      }
+      .grow {
+        flex-grow: 1;
+      }
+      .margin-left-auto {
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="flex-row">
+        <NormalButton>1</NormalButton>
+        <NormalButton>2</NormalButton>
+        <NormalButton myClass="margin-left-auto">3</NormalButton>
+      </div>
+    </div>
+  </body>
+</html>
